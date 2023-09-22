@@ -6,7 +6,7 @@ Bot ini dibuat menggunakan Python 🐍 untuk mengotomatisasi proses ekstraksi fi
 ## 🛠️ Cara Penggunaan 🛠️
 
 1. **Lokasi File Zip**
-   - Tempatkan semua file zip yang ingin diekstrak di dalam folder "Akun Fb" 📍.
+   - Tempatkan semua file zip yang ingin diekstrak di dalam folder "Go Ekstrak" 📍.
 
 2. **Menjalankan Bot**
    - Buka terminal atau command prompt 💻.
