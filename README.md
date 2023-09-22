@@ -1,7 +1,7 @@
 # 📂 Ekstrak File ZIP Bot 🤖
 
 ## 🌟 Deskripsi 🌟
-Bot ini dibuat menggunakan Python 🐍 untuk mengotomatisasi proses ekstraksi file zip 🗂️. Setiap file zip yang ada di dalam folder "Akun Fb" akan diekstrak ke dalam folder baru dengan nama yang sama dengan nama file zip tersebut 🚀.
+Bot ini dibuat menggunakan Python 🐍 untuk mengotomatisasi proses ekstraksi file zip 🗂️. Setiap file zip yang ada di dalam folder "Go Ekstrak" akan diekstrak ke dalam folder baru dengan nama yang sama dengan nama file zip tersebut 🚀.
 
 ## 🛠️ Cara Penggunaan 🛠️
 
