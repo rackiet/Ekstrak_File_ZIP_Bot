@@ -1,27 +1,24 @@
 import os
 import zipfile
 
-# Lokasi folder yang berisi file zip
-folder_path = "Go Ekstrak"
+def extract_zip_files(directory):
+    # Jelajahi semua file di direktori yang diberikan
+    for filename in os.listdir(directory):
+        if filename.endswith(".zip"):
+            # Buat nama folder berdasarkan nama file zip (tanpa ekstensi .zip)
+            folder_name = os.path.splitext(filename)[0]
+            folder_path = os.path.join(directory, folder_name)
+            
+            # Membuat folder jika belum ada
+            if not os.path.exists(folder_path):
+                os.makedirs(folder_path)
+            
+            # Mengekstrak file zip ke dalam folder tersebut
+            zip_file_path = os.path.join(directory, filename)
+            with zipfile.ZipFile(zip_file_path, 'r') as zip_ref:
+                zip_ref.extractall(folder_path)
+            print(f"File '{filename}' telah diekstrak ke folder '{folder_name}'")
 
-# Dapatkan daftar semua file dan folder di dalam folder_path
-daftar_file = os.listdir(folder_path)
-
-# Iterasi melalui setiap item di dalam folder_path
-for item in daftar_file:
-    item_path = os.path.join(folder_path, item)
-    
-    # Cek apakah item adalah file dan apakah itu adalah file zip
-    if os.path.isfile(item_path) and zipfile.is_zipfile(item_path):
-        # Buat folder baru dengan nama file zip (tanpa ekstensi)
-        new_folder = os.path.join(folder_path, os.path.splitext(item)[0])
-        os.makedirs(new_folder, exist_ok=True)
-        
-        # Buka file zip
-        with zipfile.ZipFile(item_path, 'r') as zip_ref:
-            # Ekstrak semua konten zip ke folder baru
-            zip_ref.extractall(new_folder)
-
-        print(f"File {item} telah diekstrak ke folder {new_folder}")
-
-print("Proses ekstraksi selesai.")
+if __name__ == "__main__":
+    dir_path = input("Masukkan nama folder yang berisi file zip: ")
+    extract_zip_files(dir_path)
