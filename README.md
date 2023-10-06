@@ -1,30 +1,39 @@
-# 📂 Ekstrak File ZIP Bot 🤖
+# 📦 ZIP Extractor Bot 🤖
 
-## 🌟 Deskripsi 🌟
-Bot ini dibuat menggunakan Python 🐍 untuk mengotomatisasi proses ekstraksi file zip 🗂️. Setiap file zip yang ada di dalam folder "Go Ekstrak" akan diekstrak ke dalam folder baru dengan nama yang sama dengan nama file zip tersebut 🚀.
+Selamat datang di **ZIP Extractor Bot**! Proyek ini memudahkan Anda dalam mengekstrak banyak file ZIP sekaligus dan menyimpannya ke dalam folder sesuai dengan namanya. 🚀
 
-## 🛠️ Cara Penggunaan 🛠️
+## 📋 Deskripsi
 
-1. **Lokasi File Zip**
-   - Tempatkan semua file zip yang ingin diekstrak di dalam folder "Go Ekstrak" 📍.
+Banyaknya file ZIP terkadang membuat kita bingung untuk mengatur. Dengan **ZIP Extractor Bot**, Anda dapat dengan mudah mengekstrak semua file ZIP yang ada dalam sebuah direktori. Bot ini akan membuat folder dengan nama yang sama dengan nama file ZIP (tanpa ekstensi `.zip`) dan mengekstrak isinya ke dalam folder tersebut. 🔍
 
-2. **Menjalankan Bot**
-   - Buka terminal atau command prompt 💻.
-   - Jalankan perintah berikut di direktori yang sama dengan script Python:
-     ```sh
-     python extract_bot.py
-     ```
+## 🛠 Cara Penggunaan
 
-3. **Hasil Ekstraksi**
-   - Setelah bot dijalankan, folder baru akan dibuat untuk setiap file zip, dan isi dari file zip akan diekstrak ke dalam folder tersebut 📦.
+1. Clone repositori ini:
+\`\`\`bash
+git clone https://github.com/rackiet/Ekstrak_File_ZIP_Bot.git
+\`\`\`
 
-## 📄 Lisensi 📄
-Projek ini berada di bawah lisensi MIT. Lihat berkas [LISENSI](LISENSI) untuk detail lebih lanjut 📜.
+2. Masuk ke direktori proyek:
+\`\`\`bash
+cd Ekstrak_File_ZIP_Bot
+\`\`\`
 
-## 🤝 Kontribusi 🤝
-Kontribusi, issue, dan pull request dipersilakan! 🙏
+3. Jalankan script Python:
+\`\`\`bash
+python app.py
+\`\`\`
 
-## 📬 Kontak 📬
-Untuk informasi lebih lanjut atau bantuan, silakan hubungi saya via [Email](mailto:contoh@email.com) 💌.
+4. Ikuti petunjuk yang muncul di layar untuk mengekstrak file ZIP Anda! 🎉
 
-🎉 Terima kasih sudah menggunakan bot ini! 🎉
+## 🌟 Fitur
+
+- **Otomatis**: Ekstrak semua file ZIP di sebuah direktori dengan satu perintah! 🪄
+- **Terorganisir**: Membuat folder dengan nama file ZIP untuk menampung hasil ekstraksi. 📂
+
+## 🤝 Kontribusi
+
+Kami sangat menghargai kontribusi Anda! Jika Anda menemukan bug 🐞 atau memiliki saran fitur baru 💡, jangan ragu untuk membuat `issue` atau `pull request`.
+
+## 🙏 Terima Kasih
+
+Terima kasih telah menggunakan **ZIP Extractor Bot**! Jika Anda menyukai proyek ini, tolong berikan ⭐️ di GitHub!
